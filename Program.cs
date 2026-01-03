@@ -5,9 +5,13 @@ var builder = WebApplication.CreateBuilder(args);
 builder.WebHost.UseUrls("http://0.0.0.0:5071");
 builder.Services.AddControllers(); 
 
+
 var app = builder.Build();
 
 app.UseHttpsRedirection();
+
+app.UseAuthentication(); 
+app.UseAuthorization();
 
 app.MapGet("/" ,  () =>
 {
@@ -16,6 +20,8 @@ app.MapGet("/" ,  () =>
        success = true,
        message = "API Berjalan"
    });
-}); 
+});
+
+
 
 app.Run();
