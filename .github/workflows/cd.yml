@@ -19,7 +19,7 @@ jobs:
 
     - name: Deploy to VPS
       run: |
-        ssh ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} << 'EOF'
+        ssh -o StrictHostKeyChecking=no ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} << 'EOF'
 
           cd /home/dotnet || exit 1
 
