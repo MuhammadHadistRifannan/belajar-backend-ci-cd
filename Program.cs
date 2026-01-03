@@ -12,6 +12,6 @@ app.UseHttpsRedirection();
 app.MapGet("/" , () =>
 {
    Results.Ok("API Berjalan");
-});
+}); 
 
 app.Run();
