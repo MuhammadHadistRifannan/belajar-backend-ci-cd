@@ -32,5 +32,5 @@ jobs:
 
           docker rm -f belajar-cicd-app || true
           docker build -t belajar-cicd-app .
-          docker run -d -p 5071 belajar-cicd-app
+          docker run -d -p 5071:5071 belajar-cicd-app --name belajar-cicd-app
         EOF
