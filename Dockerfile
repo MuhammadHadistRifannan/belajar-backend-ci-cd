@@ -23,4 +23,4 @@ COPY --from=build /out .
 ENV ASPNETCORE_URLS=http://+:5071
 EXPOSE 5071
 
-ENTRYPOINT ["dotnet", "MyApi.dll"]
+ENTRYPOINT ["dotnet", "belajar-cicd.dll"]
