@@ -30,6 +30,7 @@ jobs:
             git pull origin main
           fi
 
-          docker compose down
-          docker compose up -d --build
+          docker rm -f belajar-cicd-app || true
+          docker build -t belajar-cicd-app .
+          docker run -d -p 5071 belajar-cicd-app
         EOF
