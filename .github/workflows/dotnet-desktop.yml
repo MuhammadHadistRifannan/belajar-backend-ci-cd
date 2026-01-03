@@ -27,3 +27,7 @@ jobs:
 
     - name: Test
       run: dotnet test --no-build --verbosity normal
+
+    - name: publish 
+      run: dotnet publish -c Release -r linux-x64
+    

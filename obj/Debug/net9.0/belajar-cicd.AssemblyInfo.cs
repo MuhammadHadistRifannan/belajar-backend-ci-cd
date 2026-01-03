@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("belajar-cicd")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e11dd65c36fc617990d144496b83faff8ba27d64")]
 [assembly: System.Reflection.AssemblyProductAttribute("belajar-cicd")]
 [assembly: System.Reflection.AssemblyTitleAttribute("belajar-cicd")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
