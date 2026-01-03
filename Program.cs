@@ -9,9 +9,9 @@ var app = builder.Build();
 
 app.UseHttpsRedirection();
 
-app.MapGet("/" , () =>
+app.MapGet("/" , async (context) =>
 {
-   Results.Ok("API Berjalan");
+   await context.Response.WriteAsync("Responses from API");
 }); 
 
 app.Run();
